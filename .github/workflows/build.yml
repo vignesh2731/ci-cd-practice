@@ -1,0 +1,26 @@
+name: Build on pullreq
+
+on:
+    pull_request:
+        branches:
+            - main
+            - master
+
+jobs:
+    yoyo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkoutcode
+              uses: actions/checkout@v2
+
+            - name: Install node
+              uses: actions/setup-node@v2
+              with:
+                node-version: '20'
+
+            - name: Install dependencies
+              run: npm install
+            
+            - name: Run tests
+              run: npm run test
+
