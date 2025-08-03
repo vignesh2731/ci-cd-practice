@@ -12,4 +12,4 @@ RUN npx tsc -b
 
 EXPOSE 3000
 
-CMD [ "node","./dist","bin.js" ]
+CMD [ "npm","run","start" ]

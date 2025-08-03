@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "start": "tsc -b && node ./dist/bin.js"
+    "start": "node ./dist/bin.js"
   },
   "keywords": [],
   "author": "",
