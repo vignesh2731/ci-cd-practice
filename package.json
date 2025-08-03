@@ -17,6 +17,7 @@
     "supertest": "^7.1.4"
   },
   "devDependencies": {
+    "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   }
 }
